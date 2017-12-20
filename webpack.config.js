@@ -2,7 +2,6 @@ const webpack = require("webpack");
 const path = require("path");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-
 const pkg = require("./package");
 const widgetName = pkg.widgetName;
 const name = pkg.widgetName.toLowerCase();
@@ -15,7 +14,7 @@ const widgetConfig = {
         libraryTarget: "umd"
     },
     resolve: {
-        extensions: [ ".ts", ".js", ".json" ],
+        extensions: [ ".ts", ".js" ],
         alias: {
             "tests": path.resolve(__dirname, "./tests")
         }
