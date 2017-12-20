@@ -27,7 +27,6 @@ export interface SignatureProps {
 	timeOut?: number;
 	velocityFilterWeight?: string;
 	width?: number;
-
 	resetMxObject?: () => void;
 	finalizeSignature?: (canvas: HTMLCanvasElement) => void;
 	showImage?: () => HTMLImageElement;
