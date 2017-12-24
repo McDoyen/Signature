@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="com.mendix.widget.custom.signature.Signature" offlineCapable="true" needsEntityContext="true" mobile="true" xmlns="http://www.mendix.com/widget/1.0/">
+    <name>Signature</name>
+    <description>A pad for capturing signatures</description>
+    <icon />
+    <properties>
+        <property key="dataUrl" type="attribute" required="true" isPath="optional" pathType="reference">
+            <caption>Data URL</caption>
+            <category>Data source</category>
+            <description>The Data URL attribute. Make sure this is an 'Unlimited String'! The signature is stored here as a Base64 encoded PNG image.</description>
+            <attributeTypes>
+                <attributeType name="String" />
+            </attributeTypes>
+        </property>
+        <property key="penColor" type="string" defaultValue="#000">
+            <caption>Pen color</caption>
+            <category>Pen Customization</category>
+            <description />
+        </property>
+        <property key="maxWidth" type="string" defaultValue="2.5">
+            <caption>Maximum line width</caption>
+            <category>Pen Customization</category>
+            <description />
+        </property>
+        <property key="minWidth" type="string" defaultValue="0.5">
+            <caption>Minimum line width</caption>
+            <category>Pen Customization</category>
+            <description />
+        </property>
+        <property key="velocityFilterWeight" type="string" defaultValue="0.7">
+            <caption>Pen pressure weight</caption>
+            <category>Pen Customization</category>
+            <description />
+        </property>
+        <property key="timeOut" type="integer" defaultValue="1000">
+            <caption>Signature timeout</caption>
+            <category>Appearance</category>
+            <description>Time (in ms) to wait before considering the signature finished after the pen has stopped touching the pad.</description>
+        </property>
+        <property key="height" type="integer" defaultValue="500">
+            <caption>Canvas height</caption>
+            <category>Appearance</category>
+            <description>Height of the pad</description>
+        </property>
+        <property key="width" type="integer" defaultValue="500">
+            <caption>Canvas width</caption>
+            <category>Appearance</category>
+            <description>Width of the pad</description>
+        </property>
+        <property key="showGrid" type="boolean" defaultValue="true">
+            <caption>Show grid</caption>
+            <category>Appearance</category>
+            <description />
+        </property>
+        <property key="gridx" type="integer" defaultValue="50">
+            <caption>Grid X</caption>
+            <category>Appearance</category>
+            <description>Grid column size</description>
+        </property>
+        <property key="gridy" type="integer" defaultValue="50">
+            <caption>Grid Y</caption>
+            <category>Appearance</category>
+            <description>Grid row size</description>
+        </property>
+        <property key="gridColor" type="string" defaultValue="#777">
+            <caption>Grid color</caption>
+            <category>Appearance</category>
+            <description />
+        </property>
+        <property key="gridBorder" type="integer" defaultValue="1">
+            <caption>Grid border width (px)</caption>
+            <category>Appearance</category>
+            <description />
+        </property>
+        <property key="responsive" type="boolean" defaultValue="true">
+            <caption>Responsive</caption>
+            <category>Responsiveness</category>
+            <description>Make the signature pad responsive. Set the ratio accordingly</description>
+        </property>
+        <property key="responsiveRatio" type="string" defaultValue="1.5">
+            <caption>Responsive ratio</caption>
+            <category>Responsiveness</category>
+            <description>This is the width/height ratio for the widget when setting responsive. Ratio is calculated as: heigh = width / responsiveRatio</description>
+        </property>
+    </properties>
+</widget>
